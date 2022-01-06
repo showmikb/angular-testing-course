@@ -12,13 +12,10 @@ phases:
         - echo Installing source NPM dependencies...
         - npm install -g @angular/cli
         - npm install
-        - npm run server
-        - npm start
+#        - npm run server
+#        - npm start
   
 
 artifacts:
     files:
         - '**/*'
-    type: zip
-    base-directory: 'dist*'
-    discard-paths: yes
