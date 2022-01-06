@@ -12,13 +12,10 @@ phases:
         - echo Installing source NPM dependencies...
         - npm install -g @angular/cli
         - cd angular-testing-course
-
-  build:
-    commands:
-        - echo Build started 
-        - ng build
-        - npm run gulp
-        
+        - npm install
+        - npm run server
+        - npm start
+  
 
 artifacts:
     files:
